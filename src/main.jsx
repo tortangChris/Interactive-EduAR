@@ -10,15 +10,14 @@ createRoot(document.getElementById("root")).render(
 );
 
 // ✅ Register Service Worker for PWA
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker
-      .register("/service-worker.js")
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
       .then((reg) => {
-        console.log("[Service Worker] Registered!", reg);
+        console.log('[Service Worker] Registered!', reg);
       })
       .catch((err) => {
-        console.log("[Service Worker] Registration failed:", err);
+        console.log('[Service Worker] Registration failed:', err);
       });
   });
 }

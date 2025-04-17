@@ -16,10 +16,10 @@ export default defineConfig({
         description:
           "EduAR is an interactive learning PWA that brings education to life through immersive AR experiences",
         theme_color: "#ffffff",
-        // background_color: "#ffffff",
-        // display: "standalone",
-        // scope: "/",
-        // start_url: "/",
+        background_color: "#ffffff",
+        display: "standalone",
+        scope: "/",
+        start_url: "/",
         icons: [
           {
             src: "pwa-192x192.png",
